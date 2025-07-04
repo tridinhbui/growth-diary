@@ -1,0 +1,20 @@
+{
+  "name": "Growth Diary",
+  "short_name": "Growth Diary",
+  "description": "Hành trình phát triển cá nhân với UI ảo diệu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e1b4b",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["lifestyle", "productivity", "health"],
+  "lang": "vi",
+  "scope": "/"
+} 
