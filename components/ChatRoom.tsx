@@ -2,7 +2,11 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { Send, Heart, Users } from 'lucide-react';
-import { v4 as uuidv4 } from 'uuid';
+
+// Simple ID generator to replace uuid
+const generateId = () => {
+  return Date.now().toString(36) + Math.random().toString(36).substr(2);
+};
 
 interface Message {
   id: string;
@@ -16,7 +20,7 @@ interface Message {
 export default function ChatRoom() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [newMessage, setNewMessage] = useState('');
-  const [userUuid] = useState(() => uuidv4());
+  const [userUuid] = useState(() => generateId());
   const [isConnected, setIsConnected] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
