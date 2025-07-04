@@ -19,12 +19,7 @@
     "NEXTAUTH_URL": "http://localhost:7890",
     "PORT": "7890"
   },
-  "functions": {
-    "app/api/**/*": {
-      "runtime": "nodejs18.x",
-      "maxDuration": 30
-    }
-  },
+
   "headers": [
     {
       "source": "/(.*)",
